@@ -47,6 +47,9 @@ Team G-Revolution?
     2 7 0 9 3 6 0 6 2 6 
     Output
     7
+    
+    Output Format
+For each test case, print the maximum number of fights Team G-Revolution can win if they go to fight in an optimal manner.
 */
 
 #include <bits/stdc++.h>
