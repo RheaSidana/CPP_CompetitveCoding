@@ -54,6 +54,8 @@ Team G-Revolution?
 using namespace std;
 
 int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     long int T;
     //The first line of input consists of the number of test cases, T
     cin>>T;
