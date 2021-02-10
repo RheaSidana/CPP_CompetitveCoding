@@ -1,11 +1,11 @@
 /*
 
 take an integer input and then draw the pattern according to it. Say for example if you enter 5 then, the pattern should be like this-
-             A
-          B A B
-       C B A B C
-   D C B A B C D
-E D C B A B C D E 
+        A 
+      B A B
+    C B A B C
+  D C B A B C D
+E D C B A B C D E
 
 Input Format
 You will take an integer input n from stdin.
