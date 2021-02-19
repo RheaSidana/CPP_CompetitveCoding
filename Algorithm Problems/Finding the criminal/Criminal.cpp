@@ -40,4 +40,58 @@ So, Limak will catch criminals in cities 1, 3 and 5, that is 3 criminals in tota
 
 
 */
+#include <iostream>
+using namespace std;
+int main(int argc, char *a[])
+{
+    int lives,cities,res=0;
+    cout<<"Enter lives and cities : ";
+    cin>>lives>>cities;
+    int criminals[cities];
+    cout<<"Enter "<<cities<<" criminals: ";
+    for(int i=0;i<cities;i++){
+        cin>>criminals[i];
+    }
+    if(lives==1 || lives==cities){
+        for(int i=0;i<cities;i++){
+            res+=criminals[i];
+        }
+    }
+    else{
+          int left,right;
+          left=lives-2;
+          right=lives;
+          res=criminals[lives-1];
+          while(true){
+            if(left==-1 && right==cities){
+              break;
+            }
+            else
+            if(left==-1 && right!=cities){
+              while(right!=cities){
+                res+=criminals[right];
+                right++;
+              }
+              break;
+            }
+            else
+            if(left!=-1 && right==cities){
+              while(left!=-1){
+                res+=criminals[left];
+                left--;
+              }
+              break;
+            }
+            else{
+              if(criminals[left]==criminals[right]){
+                res+=criminals[left]*2;
+              }
+              left--;right++;
+            }
+          }
+        }
+    cout<<endl<<res;
+    return 0;
+}
+
 
