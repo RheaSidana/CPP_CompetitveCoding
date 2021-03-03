@@ -10,7 +10,7 @@ Input Format
 You will be given a function with two strings as arguments where number of digits in first string does not exceed and the second string can contain leading zeroes.
 
 
-Constraints
+Constraints:
 1 < |S| < 10^5
 
 Output Format
