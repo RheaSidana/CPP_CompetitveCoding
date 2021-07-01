@@ -1,3 +1,3 @@
-# CPP
+# CPP_CompetitiveCoding
 
-CPP(C++) Assignments, Questions and Projects.
+<h3>Competitive Coding<\h3>
