@@ -59,7 +59,7 @@ class Result
 
     public static void miniMaxSum(List<int> arr)
     {
-        long min=arr[0],max=arr[0],minSum=0,maxSum=0;
+        long min=arr[0],max=arr[0],sum=0,minSum=0,maxSum=0;
         foreach(int n in arr){
             if(min>n){
                 min=n;
@@ -67,7 +67,9 @@ class Result
             if(max<n){
                 max=n;
             }
+            sum+=n;
         }
+        /*
         foreach(int n in arr){
             if(min==n){
                 minSum+=n;
@@ -81,7 +83,9 @@ class Result
                 maxSum+=n;
                 minSum+=n;
             }
-        }
+        }*/
+        minSum=sum-max;
+        maxSum=sum-min;
         Console.WriteLine("{0} {1}",minSum,maxSum);
     }
 
