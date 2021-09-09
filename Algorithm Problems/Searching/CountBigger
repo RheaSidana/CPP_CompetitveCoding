@@ -1,0 +1,51 @@
+/*
+Count Bigger (100 Marks)
+You will be given an array and a number and you need to count how many numbers are bigger than this number and print this count to the stdout.
+
+Input Format
+You will be taking a number as an input using stdin which tells about the length of the array. On another line, array elements should be there with single space between them. Another line will have the number for which you have to do the comparison.
+
+Constraints
+1 <= L <= 1000
+1 <= Ai <= 1000
+
+Output Format
+Print the count to the stdout.
+
+Sample TestCase 1
+Input
+5
+10 11 12 44 66
+22
+Output
+2
+Explanation
+There are only two numbers which are greater than 22 that are 44 and 66.
+*/
+
+/* 
+ * Enter your code here. Read input from STDIN. Print your output to STDOUT. 
+ * Your class should be named CandidateCode.
+*/
+
+import java.*;
+import java.util.*;
+public class CandidateCode {
+    public static void main(String args[] ) throws Exception {
+    	Scanner in = new Scanner (System.in);
+        int n,no,count=0;
+        n=in.nextInt();
+        in.nextLine();
+        String str=in.nextLine();
+        String[] s = str.split(" ");
+        no=in.nextInt();
+        for(int i=0;i<n;i++){
+            int m=Integer.parseInt(s[i]);
+            if(m>no){
+                count+=1;
+            }
+        }
+        System.out.print(count);
+   }
+}
+
